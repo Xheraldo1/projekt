@@ -1,0 +1,222 @@
+* {
+  margin: 0;  /* Heq margjinën default të çdo elementi */
+  padding: 0;  /* Heq padding-un default të çdo elementi */
+  box-sizing: border-box;  /* Bën që padding dhe border të mos ndikojnë në madhësinë e elementit */
+  font-family: Arial, sans-serif;  /* Vendos fontin Arial për çdo element */
+}
+
+body {
+  font-family: Arial, sans-serif;  /* Vendos fontin për tekstin në trupin e faqes */
+  line-height: 1.6;  /* Bën që distanca ndërmjet rreshtave të jetë 1.6 herë më e madhe se madhësia e fontit */
+  background-color: #0b0a0a;  /* Vendos ngjyrën e sfondit të faqes */
+  color: #ffffff;  /* Vendos ngjyrën e tekstit */
+}
+
+/* Header dhe Navigimi - Këto janë stilet për kokën dhe menynë e navigimit */
+header {
+  background-color: #2c1e49;  /* Ngjyra e sfondit të header-it */
+  padding: 1rem;  /* Hapësira brenda header-it */
+}
+
+nav ul {
+  list-style: none;  /* Heq pikët nga lista */
+  display: flex;  /* Shfaq elementët e listës në një rresht */
+  justify-content: center;  /* Qendron elementët e listës në qendër */
+}
+
+nav ul li {
+  margin: 0 15px;  /* Ndaj çdo lidhje të listës me 15px hapësirë anash */
+}
+
+nav ul li a {
+  text-decoration: none;  /* Heq theksin (underline) nga lidhjet */
+  color: #f80808;  /* Ngjyra e lidhjeve */
+  font-weight: bold;  /* Bën që tekstet e lidhjeve të jenë të trasha */
+  text-transform: uppercase;  /* Bën që tekstet e lidhjeve të jenë të shkruara me germa të mëdha */
+}
+
+nav ul li a:hover {
+  color: #a5ff61;  /* Ndryshon ngjyrën e lidhjes në të kuqe kur kalon mbi të */
+}
+
+/* Seksionet e faqes - Stilet për secilën pjesë të faqes */
+section {
+  padding: 2rem 0;  /* Hapësira vertikale (top dhe bottom) për çdo seksion */
+  margin: 0 10%;  /* Hapësira anash seksionit (10% e gjerësisë së faqes) */
+}
+
+h1 {
+  text-align: center;  /* Teksti në titujt e seksioneve është në qendër */
+  color: #c62c2c;  /* Ngjyra e titujve */
+  margin-bottom: 1rem;  /* Hapësira poshtë titujve */
+}
+
+p {
+  text-align: center;  /* Teksti është i qendruar */
+  font-size: 1.1rem;  /* Madhësia e fontit për paragrafet */
+  line-height: 1.8;  /* Lartësia e rreshtave është 1.8 herë më e madhe se madhësia e fontit */
+}
+
+a {
+  color: #ff6f61;  /* Ngjyra e lidhjeve */
+  text-decoration: none;  /* Heq theksin (underline) nga lidhjet */
+}
+
+a:hover {
+  text-decoration: underline;  /* Vendos theksin kur kalon mbi lidhjet */
+}
+
+/* Projektet - Stilet për secilin projekt */
+.project {
+  background-color: #3d5b29;  /* Ngjyra e sfondit të secilit projekt */
+  padding: 1rem;  /* Hapësira brenda secilit projekt */
+  margin: 1rem 0;  /* Hapësira mes secilit projekt */
+  box-shadow: 0 0 10px rgba(141, 15, 15, 0.1);  /* Hije e lehtë rreth secilit projekt */
+  text-align: center;  /* Teksti është i qendruar */
+}
+
+.project h2 {
+  color: #d8caca;  /* Ngjyra e titullit të projektit */
+  margin-top: 1rem;  /* Hapësira mbi titullin e projektit */
+}
+
+/* Zvogëlojmë fotot e projekteve dhe vendosim përmasa të përshtatshme */
+.project img {
+  max-width: 30%;  /* Fotot e projekteve nuk do të kalojnë 70% të gjerësisë së seksionit */
+  height: auto;  /* Kjo do të mbajë proporcionet origjinale të fotove */
+  margin-bottom: 1rem;  /* Hapësira poshtë fotove të projekteve */
+}
+
+/* Zvogëlimi i fotos së Projektit 3 */
+.project img[src="C:\\Users\\XHERALDO\\Downloads\\sql.webp"] {
+  max-width: 50%;  /* Fotot e projektit 3 janë më të vogla (50% të gjerësisë) */
+}
+
+/* Linku për të shkarkuar projektet */
+.project a {
+  text-decoration: none;  /* Heq theksin (underline) nga lidhjet */
+  color: #ff6f61;  /* Ngjyra e lidhjeve */
+}
+
+.project a:hover {
+  text-decoration: underline;  /* Vendos theksin kur kalon mbi lidhjen */
+}
+
+/* Fotoja personale */
+.contact-photo {
+  width: 200px;  /* Gjerësia e fotos personale */
+  height: 200px;  /* Lartësia e fotos personale */
+  border-radius: 50%;  /* E bën foton të rrumbullakët */
+  margin: 1rem auto;  /* Hapësira rreth fotos për ta qendrojnë në mes */
+  display: block;  /* Bën që fotoja të shfaqet si element bllok */
+  border: 4px solid #edf506;  /* Shton një kufi të errët rreth fotos */
+}
+
+/* Arsimi dhe Eksperienca - Stilet për fotot e eksperiencës */
+.experience-photo {
+  width: 120px;  /* Gjerësia e fotove të eksperiencës */
+  height: 120px;  /* Lartësia e fotove të eksperiencës */
+  margin: 0 10px;  /* Hapësira anash fotove të eksperiencës */
+  border-radius: 8px;  /* Këndet e buta për fotot */
+}
+
+/* Blogu - Pjesa që lexon blogu */
+.blog-post {
+  margin-bottom: 2rem;  /* Hapësira mes secilës postim të blogut */
+  background-color: #0f6118;  /* Ngjyra e sfondit për postimet e blogut */
+  padding: 1rem;  /* Hapësira brenda çdo postimi të blogut */
+  box-shadow: 0 0 10px rgba(228, 2, 2, 0.1);  /* Hije e lehtë rreth secilit postim të blogut */
+}
+
+.blog-image {
+  max-width: 100%;  /* Fotot e blogut do të zënë gjithë hapësirën e mundshme, pa i deformuar */
+  height: auto;  /* Kjo mban proporcionet e fotove të blogut */
+  margin-top: 1rem;  /* Hapësira mbi foton e blogut */
+}
+
+.blog-post h2 {
+  color: #de0f0f;  /* Ngjyra e titujve të postimeve në blog */
+  margin-top: 1rem;  /* Hapësira mbi titujt e postimeve */
+}
+
+.blog-post p {
+  font-size: 1rem;  /* Madhësia e fontit për tekstin e blogut */
+  line-height: 1.6;  /* Lartësia e rreshtave për të bërë tekstin më të lehtë për t'u lexuar */
+}
+
+/* Footer - Stilet për fundin e faqes */
+footer {
+  background-color: #333;  /* Ngjyra e sfondit të footer-it */
+  color: #fff;  /* Ngjyra e tekstit në footer */
+  text-align: center;  /* Teksti është i qendruar në footer */
+  padding: 1rem 0;  /* Hapësira vertikale për footer-in */
+  margin-top: 2rem;  /* Hapësira që ndan footer-in nga përmbajtja e lartë */
+}
+
+/* Kontakt - Formulari për dërgimin e mesazheve */
+form {
+  display: flex;  /* Përdorim fleksibilitet për të rregulluar elementët brenda formularit */
+  flex-direction: column;  /* Elementët do të shfaqen në një kolonë */
+  align-items: center;  /* Rregullon elementët që të qëndrojnë në qendër */
+  margin-top: 2rem;  /* Hapësira poshtë seksionit të formularit */
+}
+
+form .form-group {
+  margin: 1rem 0;  /* Hapësira mes çdo fushe të formularit */
+  width: 100%;  /* Përdorim të gjithë hapësirën të disponueshme për fushat e formularit */
+  max-width: 500px;  /* Limitojmë gjerësinë maksimale të formularit për ekranet më të mëdha */
+}
+
+form label {
+  font-size: 1.1rem;  /* Madhësia e fontit për etiketat */
+  margin-bottom: 0.5rem;  /* Hapësira nën etiketat */
+  color: #f30505;  /* Ngjyra e etiketave */
+}
+
+form input, form textarea {
+  width: 100%;  /* Fusha e input dhe textarea do të mbushin të gjithë hapësirën e disponueshme */
+  padding: 0.8rem;  /* Hapësira brenda fushave */
+  margin-top: 0.5rem;  /* Hapësira mbi fushat */
+  border: 1px solid #ccc;  /* Kufiri i butë rreth fushave */
+  border-radius: 4px;  /* Këndet e buta për fushat */
+}
+
+form button {
+  background-color: #ff6f61;  /* Ngjyra e butonit */
+  color: #336909;  /* Ngjyra e tekstit në buton */
+  padding: 1rem 2rem;  /* Hapësira brenda butonit */
+  border: none;  /* Heq kufirin nga butoni */
+  border-radius: 4px;  /* Këndet e buta të butonit */
+  font-size: 1rem;  /* Madhësia e fontit për butonin */
+  cursor: pointer;  /* Bën që kur kalon mbi butonin të shfaqet kursori si gishti */
+  margin-top: 1rem;  /* Hapësira mbi buton */
+}
+
+form button:hover {
+  background-color: #300073;  /* Ndryshon ngjyrën e butonit kur kalon mbi të */
+}
+
+/* Responsivitet - Përshtatja për ekranet më të vogla */
+@media screen and (max-width: 768px) {
+  section {
+    margin: 0 5%;  /* Hapësira e seksioneve zvogëlohet për ekranet më të vogla */
+  }
+
+  nav ul {
+    flex-direction: column;  /* Menuja shfaqet në mënyrë vertikale në ekranet më të vogla */
+    padding: 0;  /* Heq padding-un nga menuja */
+  }
+
+  nav ul li {
+    margin: 10px 0;  /* Ndajmë më shumë hapësirë mes lidhjeve të menu-së */
+  }
+
+  .contact-photo {
+    width: 120px;  /* Përshtatim i madhësisë së fotos personale për ekranet më të vogla */
+    height: 120px;
+  }
+
+  .form-group {
+    width: 100%;  /* Fushat e formularit mbushin të gjithë hapësirën në ekranet më të vogla */
+  }
+}
